@@ -1,0 +1,40 @@
+{
+  "author": {
+    "name": "kzv, irevenko, tetakta"
+  },
+  "bugs": {
+    "url": "https://github.com/nitnetwork/btc.truth_machine_v0.1/issues"
+  },
+  "dependencies": {
+    "bip65": "latest",
+    "bitcoinjs-lib": "latest",
+    "ecpair": "latest",
+    "node-fetch": "^2.6.7",
+    "tiny-secp256k1": "^2.2.1"
+  },
+  "description": "Utilites for blockchain data",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/nitnetwork/btc.truth_machine_v0.1#readme",
+  "keywords": [
+    "bitcoin",
+    "blockchain",
+    "database",
+    "data"
+  ],
+  "license": "GPL-3.0",
+  "main": "./lib/utils.js",
+  "name": "btc-truth-machine",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitnetwork/btc.truth_machine_v0.1.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
