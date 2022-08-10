@@ -1,0 +1,22 @@
+Truth machine
+
+From the creation of the blockchain and the popular title that Satoshi chose to record as the first permanent notice on the blockchain, Bitcoin has been operated as a platform for freedom of speech. Also, in addition to the exchange of digital currency on a global level, Bitcoin gives its users the ability to publish data that is not subject to censorship or cancellation and will be available to the world while Bitcoin exists (since one copy or node exists, maybe forever). Everyone sees the abilities and usage of Bitcoin differently. Moreover, we are predisposed to consider that the data entry can be a legitimate and cost-effective use of the blockchain.
+
+It is commonly known that the blockchain can store external information. There are a lot of websites that give access to some of this information. Some excellent searchers have found several interesting historical antiques that were stored on the blockchain a long time ago. Nevertheless, there is still embarrassment and falsification about the different forms of information storage (possible and existent). As for now, there is no appropriate way to allocate arbitrary data to the Bitcoin blockchain. There is a need for simple and easy-to-understand interfaces. This is where we decided to begin.
+
+We introduce to you Truth machine – the system for text recording and reading to Bitcoin and Ethereum blockchains. Additionally, it’s intended to verify and deposit, using the technology of decentralized blockchain and IPFS.
+
+Standard Scripts-Bitcoin's stack-based scripting language for creation of transaction is known as "Script."
+Bitcoin transactions contain input and output scripts. Input scripts are solutions (unlocking scripts) to prior output scripts (blocking scripts) in previous transactions stored in the blockchain. Currently, there are 5 standard script types, which are used and allowed for transactions in the Bitcoin network. The standard script types include Pay-to-Public-Key (P2PK), Pay-to-Public-Key-Hash (P2PKH), Multi-Signature, Pay-to-Script-Hash (P2SH) and OP_RETURN (see Appendix B for script formats). Each of them can be used to store arbitrary data in the Bitcoin blockchain.
+
+Data Hash Method - is a more practical method of entering information into the Blockchain.
+Identical to the Data Drop method, the input script preceding the Redeem Script includes duplicated chunks of ....
+
+The format of the Redeem Script:
+OP_HASH160 OP_EQUALVERIFY
+These three commands are then duplicated for each information element that is pushed into the stack using the input script. Instead of simply dropping each data component off the stack, this script uses hashes to confirm that each chunk of data has not been falsified. Because the hashes are stored in the Redeem Script, and the hash of the Redeem Script was recorded in the first stage UTXO, no other data can be replaced with the input script that spends this UTXO, even if these transaction inputs were not signed. Despite it, signing each input (by including at the beginning of the input script and OP_CHECKSIG at the end of the Redeem Script) is still important to prevent an adversary from possible disorganizing the inputs, or adding a subset of the inputs, in a competing transaction. These security issues are further explained in the next section.
+
+The function module has 3 major tasks:
+Recording;
+Reading;
+Verification (in progress).
